@@ -1,31 +1,28 @@
-// Assign const / globals 
-const scoresSection = document.querySelector('#high-scores')
-const olElem = document.createElement("ol")
-let sortedData;
 
-// Adds scores to list in doc
-const addScores = async()=> {
-    scoresSection.append(olElem)
-    sortedData.forEach(element => {
-        let userScore = `${element[0]} --- ${element[1]}`
-        let liElem = document.createElement("li")
-        olElem.append(liElem)
-        liElem.appendChild(document.createTextNode(userScore)) 
-    });
+var highScore = document.querySelector("#highScore");
+var clear = document.querySelector("#clear");
+var goBack = document.querySelector("#goBack");
+
+// Event listener to clear scores 
+clear.addEventListener("click", function () {
+    localStorage.clear();
+    location.reload();
+});
+// Retreives local stroage 
+var allScores = localStorage.getItem("allScores");
+allScores = JSON.parse(allScores);
+
+if (allScores !== null) {
+
+    for (var i = 0; i < allScores.length; i++) {
+
+        var createLi = document.createElement("li");
+        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
+        highScore.appendChild(createLi);
+
+    }
 }
-
-// Check if high score exists if so sort data 
-if(localStorage.scores) {
-    const data = JSON.parse(localStorage.scores)
-    sortedData = data.sort((a, b) => b[1] - a[1])
-    addScores()
-}
-
-// Func to clear scores and refresh page
-const clearScore = async ()=> {
-    localStorage.removeItem('scores')
-    location.reload()
-}
-
-// Event listener
-document.querySelector('#clear-scores').addEventListener('click', clearScore)
+// Event listener to move to index page
+goBack.addEventListener("click", function () {
+    window.location.replace("index.html");
+});

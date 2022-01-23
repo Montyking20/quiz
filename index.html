@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Code Quiz</title>
 </head>
-<body>
+<body id="box">
   <header class= "header">
   <a class="score" href ="/highscores.html">High Scores</a>
   <span id= "countdown"></span>
 </header>
-  <main>
+  <div id= "questionsGroup"></div>  
+<main>
   <h1>Coding Quiz Challenge</h1>
   <p>Try to answer the following code-related questions within the time <br> limit. Keep in mind that incorrent answers will penalize your score/time <br>
   by ten seconds! </p>
-  <div class="start"><button>Start</button></div>
+  
+  <ul id="choicesList"></ul>
+  <div id="start"><button>Start</button></div>
   <div class="start-window">
 
 
