@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Wide use classes style  */
+/* Header and footer */
+.banners {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex; 
+}
+
+.links {
+    position:absolute;
+    top:2rem;
+    right:5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* Primary Containers for Quiz / results */
+.center-boxes {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40rem;
+    min-height: 30rem;
+}
+
+.center-boxes input, ol {
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--main-txt-color);
+    max-width: 100%;
+}
+
+.center-boxes input {
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+}
+
+.center-boxes input:hover {
+    background-color: var(--main-bg-color);
+    box-shadow:  0px 33px 25px 0 #000, 
+                 0 26px 15px 0px #ccc;
+    padding: 1rem;
+}
+
+.center-boxes h4{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 0;
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+.buttons {
+    position: relative;
+    border: none;
+    padding: 1rem 2rem;
+    margin-left: 44%;
+    margin-top: 10%;
+    text-decoration: none;
+    background: var(--main-bg-color);
+    color: var(--main-txt-color);
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+/* Footer style */
+.footer {
+    height: 3.5rem;  
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+   
+}
+
+.footer span {
+    padding-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Unique Styles */
+#quiz-questions {
+    border: black solid .12rem;
+}
+
+#start-quiz {
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    width: 15rem;
+}
+
+#submit-btn {
+    position: relative;
+    bottom: 0;
+}
+
+#initials {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+/*Media Screen*/
+
+@media only screen and (max-width: 725px) {
+    
+.links {
+   position: absolute;
+   font-size: 1rem;
+   left: 0;
+   bottom: 10;
+}
+.center-boxes {
+   width: none;
+   min-width: 90%;
+   max-width: 90%;    
+} 
+.center-boxes ol{
+   width: 90%;
+}
+section {
+   margin: 0;
+}
+
+}
+
