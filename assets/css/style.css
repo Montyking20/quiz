@@ -120,7 +120,16 @@ li:hover{
     position: relative;
     min-height: 100vh;
 }
-
+#score{
+    text-decoration: none;
+    background-color: #000000;
+    color: #813b38;
+    font-weight: bold;
+    border: solid #000000 1pt;
+    border-radius: 0pt 0pt 6pt 0pt;
+    padding: 0pt 5pt 5pt 5pt;
+    
+}
 /*class style*/
 .footer {
     /* margin-top: 70%; */
