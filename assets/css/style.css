@@ -2,15 +2,14 @@
 
 button {
     background-color: #000000;
-    color: #ffffff;
-    font-size: 22px;
+    color: #813b38;
+    font-size: 20px;
     border: none;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
       0px;
     line-height: 22px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
+    padding: 14px 14px;
     text-align: center;
     cursor: pointer;
     display: inline-block;
@@ -33,19 +32,28 @@ input {
 
 h1 {
     text-align: center;
+    padding-top: 5%;
+    font-size: 40px;
+}
+p {
+    font-size: 17px;
+    text-align: center;
 }
 
 li {
-    background-color: #1c2149;
-    color: #8b4848;
     font-size: 18px;
     margin-top: 10px;
     padding: 5px 15px;
     width: 80%;
+    border: 1px solid #000000;
+    list-style: none;
 }
+li:hover{
+    cursor: pointer;
+    background-color: #1c2149;
+    color: #8b4848;
 
-
-
+}
 
 /*id styles*/
 
@@ -56,7 +64,7 @@ li {
     width: 500px;
     height: 500px;
     border: 3px solid #3d1d1d;
-    box-shadow: #5c2020 3px 15px 30px 5px;
+    box-shadow: #5c2020 3px 18px 70px 5px;
 }
 
 #createDiv {
@@ -66,68 +74,57 @@ li {
 
 #Submit {
     margin-left: 33%;
-    padding: 15px 32px;
+    margin: 3% 0% 10% 40%;
 }
 
 #goBack {
     position: relative;
-    padding: 10px;
-    top: 30%;
-    left: 55%;
+    margin: 15px 10px 10px 28%;
     width: auto;
     text-align: center;
     text-decoration: none;
 }
 
 #clear {
-    color: white;
-    font-size: 20px;
     position: relative;
-    padding: 10px;
-    top: 30%;
-    right: 5%;
+    margin: 15px 10px 10px 10%;
     text-align: center;
 }
 
-#start {
-    background-color: #b8b8b8;
-    margin-left: 33%;
-    padding: 15px 32px;
-    font-size: 20px;
+#timerStart {
+    margin: 5% 0% 0% 40%;
 }
+
 
 #questionsGroup {
     margin: 20px;
 }
 
-#countdown {
+#countDown {
     float: right;
 }
 
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
 
-
-
-/*Media Screen*/
-
-@media only screen and (max-width: 725px) {
+/*class style*/
+.footer {
+    /* margin-top: 70%; */
+    clear: both;
+    font-family:  Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #142a70;
+    height: 3.5rem;  
+    position: fixed;
+    padding: 100px 100px 50px 100px;
+    bottom: 0;
     
-.links {
-   position: absolute;
-   font-size: 1rem;
-   left: 0;
-   bottom: 10;
-}
-.center-boxes {
-   width: none;
-   min-width: 90%;
-   max-width: 90%;    
-} 
-.center-boxes ol{
-   width: 90%;
-}
-section {
-   margin: 0;
 }
 
-}
+
+
+
 
