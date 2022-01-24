@@ -24,10 +24,10 @@ When quiz is completed user is asked to input name on leaderboard.
 
 <h1 style= "color:#883030">Links</h1>
 
-<h2 align= "center"><a href src="https://github.com/Montyking20/quiz">GitHub</a></h2>
+<h2 align= "center"><a href src= https://github.com/Montyking20/quiz/>GitHub</a></h2>
 
 
-<h2 align="center"><a href src="https://montyking20.github.io/quiz/">Code Quiz</a></h2>
+<h2 align="center"><a href src=https://montyking20.github.io/quiz/>Code Quiz</a></h2>
 <br>
 <br>
 
