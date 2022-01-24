@@ -14,9 +14,10 @@
 
 if (allScores !== null) {
 for (var i = 0; i < allScores.length; i++) {
-     var createLi = document.createElement("li");
+     var createLi = document.createElement("dl");
          createLi.textContent = allScores[i].initials + " " + allScores[i].score;
          highScore.appendChild(createLi);
+         
 }
 }
 

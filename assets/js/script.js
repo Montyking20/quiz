@@ -55,7 +55,7 @@ var countDown = document.querySelector("#countDown");
 var timer = document.querySelector("#timerStart");
 var questionsGroup = document.querySelector("#questionsGroup");
 var box = document.querySelector("#box"); 
-
+var startQuiz = document.querySelector("#quizStart");
 
 // timer rules
 var timeLeft = 76;
@@ -65,6 +65,7 @@ var qCreate = document.createElement("ul");
 	
 // Triggers timer, displays on the screen
 	timer.addEventListener("click", function () {
+    startQuiz.setAttribute("style", "display:none;")
 if (endQuiz === 0) {
 	endQuiz = setInterval(function () {
 	timeLeft--;
@@ -130,6 +131,7 @@ if (qindex >= questions.length) {
  }
  // All done will append last page
 function allDone() {
+	     clearInterval(endQuiz);
 	     questionsGroup.innerHTML = "";
 	     countDown.innerHTML = "";
  
@@ -148,7 +150,6 @@ function allDone() {
 if (timeLeft >= 0) {
 	 var timeRemaining = timeLeft;
 	 var createP2 = document.createElement("p");
-		 clearInterval(holdInterval);
 		 createP.textContent = "Your final score is: " + timeRemaining;
  		 questionsGroup.appendChild(createP2);
 }
@@ -164,6 +165,8 @@ if (timeLeft >= 0) {
 	 var createInput = document.createElement("input");
 	     createInput.setAttribute("type", "text");
 	     createInput.setAttribute("id", "initials");
+		 createInput.setAttribute("id", "points");
+		 createInput.setAttribute("id", "rank")
 	     createInput.textContent = "";
      	 questionsGroup.appendChild(createInput);
  

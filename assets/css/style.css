@@ -40,6 +40,18 @@ p {
     text-align: center;
 }
 
+  
+
+dl{
+    border-bottom: solid 2pt black;
+    text-align: center;
+    font-size: 15pt;
+    width: 20%;
+    margin-left: 35%;
+    
+
+}
+
 li {
     font-size: 18px;
     margin-top: 10px;
