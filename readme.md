@@ -35,3 +35,28 @@ When quiz is completed user is asked to input name on leaderboard.
 
 <br>
 
+<p align= "center" style= "color:#b38d25">Main</p>
+
+![Code Quiz](/assets/images/Screenshot-main.jpg)
+
+<br>
+
+<p align= "center" style= "color:#b38d25">Questions</p>
+
+![Password size](/assets/images/Screenshot-questions.jpg)
+
+<br>
+
+<p align= "center" style= "color:#b38d25">Quiz End</p>
+
+![Password size](/assets/images/Screenshot-quizend.jpg)
+
+<br>
+
+<p align= "center" style= "color:#b38d25">Leaderboard</p>
+
+![Password size](/assets/images/Screenshot-leaderboard.jpg)
+
+<br>
+
+
